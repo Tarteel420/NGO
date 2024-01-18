@@ -1,0 +1,274 @@
+.main-container {
+  padding: 0px 0px;
+}
+
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  background-color:#138f72;
+
+}
+
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  height: 50%;
+  box-shadow: 15px -4px 10px rgb(151 211 197);
+}
+
+.left-part {
+  flex: 3; 
+  background-color:#aad8cd;
+  height:585px;
+  animation: slideInLeft 3s ease;
+}
+
+.right-part {
+  flex: 7; 
+  background-color: #ffffff;
+  height:585px;
+}
+
+.content{
+  transform: translateX(-50%);
+  height: 50%;
+  background-color: #ffffff;
+  margin: 16% 55%;
+  width: 55%;
+}
+
+.content h1{
+  font-family: AvantGarde-Demi,sans-serif;
+  text-align: left;
+  padding:10px;
+  color:#156570;
+  animation: slideInLeft 2s ease;
+  font-weight: bold;
+}
+
+.content p{
+  font-family: AvantGarde-Demi,sans-serif;
+  text-align: left;
+  padding: 10px;
+  font-size: 22px;
+  color: #00aea8;
+  animation: slideInLeft 2s ease;
+  margin-left: 13.5%;
+}
+
+/* .transition-effect {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+} */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.center-content2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:#ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 100px;
+}
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 70%;
+  /* opacity: 0; */
+}
+
+.animate-on-scroll {
+  animation: none;
+}
+
+.image-text {
+  font-size: 15px;
+  color: #000;
+  margin: 6px 85px;
+  font-weight: bold;
+}
+
+.image-text:hover{
+  color:#138f72;
+  text-decoration: underline;
+  text-decoration-color: #156570;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
+.ic-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.ic-2 img{
+  width: 70%;
+  height: 76%;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.ic-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.ic-3 img{
+  width: 70%;
+  height: 86%;
+  border-radius: 2px;
+  padding:4px;
+}
+
+
+.ic-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.ic-4 img{
+  width: 70%;
+  height: 75%;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+h1{
+  margin-left: 14%;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.list-item {
+  padding: 10px 12px;
+  margin: 0px 15px;
+  /* background-color: #f0f0f0; */
+  /* border-radius: 5px; */
+  font-weight: bold;
+}
+
+.list-item:hover{
+  color:#138f72;
+  text-decoration: underline;
+  text-decoration-color: #156570;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.list-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color:white;
+}
+
+.image-left{
+  width: 30%;
+  height: 310px;
+  margin-top: 60px;
+}
+
+.image-right{
+    width: 30%;
+    height: 360px;
+}
+
+.list-div p {
+  color: #000;
+  flex: 2;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.growth h1{
+  /* font-weight: bold; */
+      margin-left: 130px;
+}
+
+.growth h4{
+  margin-left: 130px;
+}
+
+.growth h5{
+  margin-left: 128px;
+}
+
+.growth2 {
+  display: flex;
+  gap: 5rem;
+  margin-left: 10%;
+}
+
+.box {
+  width: 25%;
+  height: 300px;
+  border: 1px solid #156570;
+  /* margin-right: 50px;
+  margin-left: 60px; */
+  transition: background-color 1s, transform 1s;
+  text-align: left;
+}
+
+.box:hover {
+  background-color: #156570;
+  transform: translateX(10px);
+  color:#ffffff;
+}
+
+.box h4{
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.box p{
+  margin-left: 10px;
+    margin-top: 10px;
+}
+
+.box h1{
+  margin-top:70px;
+  margin-left: 10px;
+}
+
+.contentt h1{
+  margin-top:120px;
+  margin-left: 10px;
+}

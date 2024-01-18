@@ -1,0 +1,67 @@
+
+
+/* Common styles for both mobile and desktop */
+.video-container {
+  padding-top: 100px;
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50.25%; /* 16:9 aspect ratio for responsive video */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.content-container1 {
+  border-radius: 50px;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.content-container1:hover {
+ opacity: 1;
+ border: 2px solid #156570;
+}
+
+.content-container1 > p {
+  color: #156570;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading-main1 {
+  color: #156570;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgb(147, 238, 238);
+  font-weight: bold;
+  padding-right: 80px;
+  font: 2em sans-serif;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .content-container > p,
+  .heading-main1 {
+      font-size: 1rem;
+  }
+  
+  .video-container {
+    padding-bottom: 100%; /* Adjust aspect ratio for smaller screens */
+  }
+}

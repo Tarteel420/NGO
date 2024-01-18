@@ -1,0 +1,38 @@
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-cont {
+  text-align: center;
+    margin: 15px 65px;
+    height: 250px;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.image:hover{
+  transform: scale(1.1);
+  mix-blend-mode: overlay;
+}
+
+.text {
+  margin-top: 10px;
+    font-size: 14px;
+}
+
+.text:hover{
+  color:#138f72;
+  text-decoration: underline;
+  text-decoration-color: #156570;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+
+}

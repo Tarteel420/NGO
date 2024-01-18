@@ -1,0 +1,39 @@
+/* project.css */
+
+/* Styling for the heading */
+.projects-heading {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+/* Styling for each project section */
+.project-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.project-section img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+

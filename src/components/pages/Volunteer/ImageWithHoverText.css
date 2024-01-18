@@ -1,0 +1,56 @@
+.image-container2 {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; /* Add some space between images */
+}
+
+/* Add a class to target the last image and remove the right margin */
+.image-container2:last-child {
+  margin-right: 0;
+}
+  
+  .image-css {
+    max-width: 100%;
+    height: 100%;
+    
+  }
+
+  .image-css {
+    max-width: 100%; 
+    height: 100%; 
+    filter: grayscale(80%);
+  }
+  .image-css:hover {
+   filter: none;
+  }
+
+  
+  .overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #aad8cd;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+
+    transform: translateY(100%);
+  }
+  
+  .image-container2:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    .overlay {
+      font-size: 10px; /* Adjust font size for smaller screens */
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  }

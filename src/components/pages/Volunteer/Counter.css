@@ -1,0 +1,36 @@
+.main-counter {
+    text-align: center;
+    margin-top: 50px;
+  background-color: rgb(179, 245, 209);;
+    
+  }
+  
+  .counter {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+  }
+  
+ 
+  .counter > h2 {
+    color: #156570;
+    font-size: 26px;
+    font-size: 2vw; /* Responsive font size using viewport width */
+  margin: 10px 0;
+  }
+
+  .counter > img {
+    width: 50px;
+    height: 50px;
+    max-height: 15vw;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .counter {
+      width: calc(50% - 20px);
+    }
+  }

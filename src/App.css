@@ -1,0 +1,212 @@
+
+.section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-heading{
+  color: black;
+  font-size: 26px;
+}
+.underline{
+  height: 04px;
+  width:10rem;
+  background-color:#156570;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bg-c-light{
+  background-color: #f2f2f2;
+
+}
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+
+/* for progress bars */
+
+.progress-bar-custom {
+  background-color: #aad8cd;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+* Common styles for both mobile and desktop */
+.video-container {
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.content-container {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.content-container > p {
+  color: #156570;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading1 {
+  color: #156570;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .content-container > p,
+  .heading {
+      font-size: 1rem;
+  }
+  
+  .video-container {
+    padding-bottom: 100%; /* Adjust aspect ratio for smaller screens */
+  }
+}
+
+
+
+
+
+
+/* Cards */
+
+/* Cards */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.card {
+  position: relative; /* Add relative positioning for hover effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a prominent box shadow */
+  overflow: hidden; /* Hide shadow overflow */
+  transition: box-shadow 0.3s; /* Smooth transition for box shadow */
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s; /* Smooth transition for image size */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.stats {
+  width: 200px;
+}
+
+.stats img {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image Gallery */
+/* HorizontalScrollGallery.css */
+
+.scroll-gallery {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #333;
+}
+
+.scroll-gallery img {
+  width: 600px; /* Adjust image width as needed */
+  height: 400px; /* Adjust image height as needed */
+  margin-right: 20px; /* Adjust spacing between images */
+}
+
+
